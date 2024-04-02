@@ -44,7 +44,7 @@ def run(input_dict):
         '../singlestep/checkpoints/np-like/model_step_100000.pt'
     ]
     value_fn_model_path = './retro_star/saved_models/best_epoch_final_4.pt'
-    viz_dir = os.path.join('viz_' + str(int(time.time())))
+    viz_dir = os.path.join('viz_3_' + str(int(time.time())) + '_' + input_dict['target_mol_name'])
     ret_file_path = os.path.join('./viz/tmp/', viz_dir + '.zip')
     planner = RSPlanner(
         gpu=get_avai_gpu(),
@@ -83,19 +83,90 @@ def get_input():
 
 
 def main_biosynthesis():
-    input_dict = {
-        'target_mol': 'N[C@@H](CNC(=O)C(=O)O)C(=O)O',
+        
+    input_dicts = [
+        {'target_mol_name': 'Lycosantalonol',
+        'target_mol': 'CC(=CCCC(C)(C(=O)CCC1(C2CC3C1(C3C2)C)C)O)C',
         'expansion_topk': 50,
         'max_depth': 10,
         'expansion_iters': 10,
         'route_topk': 5,
-        #'building_blocks': ['N[C@@H](CO)C(=O)O'] #one can assign a specific building block with this command
-        'building_blocks':'retro_star/dataset/bio_data/bio_building_blocks_all/building_block.csv'
-    }
-    
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
 
-    res = run(input_dict)
-    print(res)
+        {'target_mol_name': 'Avenacin_A1',
+        'target_mol': 'C[C@]12CC[C@@H]([C@@]([C@@H]1CC[C@@]3([C@@H]2C[C@@H]4[C@]5([C@]3(C[C@@H]([C@@]6([C@H]5C[C@@]([C@H](C6)OC(=O)C7=CC=CC=C7NC)(C)C=O)C)O)C)O4)C)(C)CO)O[C@H]8[C@@H]([C@H]([C@H](CO8)O[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O',
+        'expansion_topk': 50,
+        'max_depth': 10,
+        'expansion_iters': 10,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Momilactone_B',
+        'target_mol': 'C[C@]1(CC[C@@H]2C(=CC3[C@@H]4[C@]25CCC([C@@]4(C(=O)O3)C)(OC5)O)C1)C=C',
+        'expansion_topk': 80,
+        'max_depth': 20,
+        'expansion_iters': 50,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Afrormosin',
+        'target_mol': 'COC1=CC=C(C=C1)C2=COC3=CC(=C(C=C3C2=O)OC)O',
+        'expansion_topk': 50,
+        'max_depth': 10,
+        'expansion_iters': 10,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Vincamine',
+        'target_mol': 'CC[C@@]12CCCN3[C@@H]1C4=C(CC3)C5=CC=CC=C5N4[C@](C2)(C(=O)OC)O',
+        'expansion_topk': 50,
+        'max_depth': 10,
+        'expansion_iters': 10,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Brucine',
+        'target_mol': 'COC1=C(C=C2C(=C1)[C@]34CCN5[C@H]3C[C@@H]6[C@@H]7[C@@H]4N2C(=O)C[C@@H]7OCC=C6C5)OC',
+        'expansion_topk': 100,
+        'max_depth': 100,
+        'expansion_iters': 200,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Diaboline',
+        'target_mol': 'CC(=O)N1[C@H]2[C@H]3[C@H]4C[C@H]5[C@@]2(CCN5CC4=CCO[C@H]3O)C6=CC=CC=C61',
+        'expansion_topk': 80,
+        'max_depth': 20,
+        'expansion_iters': 50,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Falcarindiol',
+        'target_mol':'CCCCCCC/C=C\\[C@@H](C#CC#C[C@@H](C=C)O)O',
+        'expansion_topk': 50,
+        'max_depth': 10,
+        'expansion_iters': 10,
+        'route_topk': 5,
+        'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        }
+    ]
+    
+    #target_name = "Brucine"
+    #target_input = next(input_dict for input_dict in input_dicts if input_dict['target_mol_name'] == target_name)
+    
+    #res = run(target_input)
+    #print(res)
+
+    for input_dict in input_dicts:
+        res = run(input_dict)
+        print(res)
 
 
 if __name__ == '__main__':
