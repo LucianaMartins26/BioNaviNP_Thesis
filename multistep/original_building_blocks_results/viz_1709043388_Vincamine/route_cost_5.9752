@@ -1,0 +1,12 @@
+digraph G {
+	node [shape=box]
+	"CC[C@@]12CCCN3CCC4=C([C@@H]31)N(C1=CC=CC=C14)[C@@](O)(C(=O)OC)C2" [label="CC[C@@]12CCCN3CCC4=C([C@@H]31)N(C1=CC=CC=C14)[C@@](O)(C(=O)OC)C2" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434156725.png" labelloc=top]
+	"C=CCC=O" [label="C=CCC=O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434156969.png" labelloc=top]
+	"CC[C@@]12CCCN3CCC4=C([C@@H]31)N(C1=CC=CC=C14)[C@@](O)(C(=O)OC)C2" -> "C=CCC=O" [label="cost: 1.0149"]
+	"C=CCC=O" [label="C=CCC=O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434157109.png" labelloc=top]
+	"C=CCC(=O)O" [label="C=CCC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434157245.png" labelloc=top]
+	"C=CCC=O" -> "C=CCC(=O)O" [label="cost: 0.1779"]
+	"C=CCC(=O)O" [label="C=CCC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434157403.png" labelloc=top]
+	"O=C(O)CCC(=O)O" [label="O=C(O)CCC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090434157539.png" labelloc=top]
+	"C=CCC(=O)O" -> "O=C(O)CCC(=O)O" [label="cost: 4.7823"]
+}

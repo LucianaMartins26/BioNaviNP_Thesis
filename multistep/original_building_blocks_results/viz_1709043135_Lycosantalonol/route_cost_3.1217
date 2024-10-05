@@ -1,0 +1,9 @@
+digraph G {
+	node [shape=box]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" [label="CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090431820880.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090431820976.png" labelloc=top]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="cost: 0.9649"]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090431821078.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090431821145.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" [label="cost: 2.1568"]
+}

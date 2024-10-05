@@ -44,7 +44,7 @@ def run(input_dict):
         '../singlestep/checkpoints/np-like/model_step_100000.pt'
     ]
     value_fn_model_path = './retro_star/saved_models/best_epoch_final_4.pt'
-    viz_dir = os.path.join('viz_3_' + str(int(time.time())) + '_' + input_dict['target_mol_name'])
+    viz_dir = os.path.join('viz' + str(int(time.time())) + '_' + input_dict['target_mol_name'])
     ret_file_path = os.path.join('./viz/tmp/', viz_dir + '.zip')
     planner = RSPlanner(
         gpu=get_avai_gpu(),
@@ -155,18 +155,27 @@ def main_biosynthesis():
         'expansion_iters': 10,
         'route_topk': 5,
         'building_blocks': 'retro_star/dataset/bio_data/bio_building_blocks_all/building_blocks_new.csv'
+        },
+
+        {'target_mol_name': 'Beta_Amyrin',
+        'target_mol':'CC1(C)CC[C@]2(C)CC[C@]3(C)C(=CC[C@@H]4[C@@]5(C)CC[C@H](O)C(C)(C)[C@@H]5CC[C@]43C)[C@@H]2C1',
+        'expansion_topk': 50,
+        'max_depth': 10,
+        'expansion_iters': 10,
+        'route_topk': 5,
+        'building_blocks': '/home/lmartins/BioNaviNP_LuciEdition/multistep/retro_star/dataset/bio_data/bio_building_blocks_all/building_block_beta_amyrin.csv'
         }
     ]
     
-    #target_name = "Brucine"
-    #target_input = next(input_dict for input_dict in input_dicts if input_dict['target_mol_name'] == target_name)
+    target_name = "Beta_Amyrin"
+    target_input = next(input_dict for input_dict in input_dicts if input_dict['target_mol_name'] == target_name)
     
-    #res = run(target_input)
-    #print(res)
+    res = run(target_input)
+    print(res)
 
-    for input_dict in input_dicts:
-        res = run(input_dict)
-        print(res)
+    # for input_dict in input_dicts:
+    #     res = run(input_dict)
+    #     print(res)
 
 
 if __name__ == '__main__':

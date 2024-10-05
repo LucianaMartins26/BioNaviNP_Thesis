@@ -1,0 +1,15 @@
+digraph G {
+	node [shape=box]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" [label="CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538180.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538261.png" labelloc=top]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="cost: 0.9649"]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538337.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538409.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" [label="cost: 2.6897"]
+	"CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538478.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538552.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/C=C/C1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" [label="cost: 0.1404"]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538623.png" labelloc=top]
+	"C=C(C)CCOP(=O)(O)OP(=O)(O)O" [label="C=C(C)CCOP(=O)(O)OP(=O)(O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097252538694.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/COP(=O)(O)OP(=O)(O)O" -> "C=C(C)CCOP(=O)(O)OP(=O)(O)O" [label="cost: 3.1386"]
+}

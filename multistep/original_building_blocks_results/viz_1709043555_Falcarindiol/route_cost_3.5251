@@ -1,0 +1,9 @@
+digraph G {
+	node [shape=box]
+	"CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" [label="CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435805477.png" labelloc=top]
+	"C#CC(=O)O" [label="C#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435805620.png" labelloc=top]
+	"CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" -> "C#CC(=O)O" [label="cost: 0.8285"]
+	"C#CC(=O)O" [label="C#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435805714.png" labelloc=top]
+	"O=C(O)CCC(=O)O" [label="O=C(O)CCC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435805835.png" labelloc=top]
+	"C#CC(=O)O" -> "O=C(O)CCC(=O)O" [label="cost: 2.6966"]
+}

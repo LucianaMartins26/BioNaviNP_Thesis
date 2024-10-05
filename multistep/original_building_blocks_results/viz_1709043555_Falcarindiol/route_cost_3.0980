@@ -1,0 +1,12 @@
+digraph G {
+	node [shape=box]
+	"CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" [label="CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435801905.png" labelloc=top]
+	"C#CC#CC(=O)O" [label="C#CC#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435802044.png" labelloc=top]
+	"CCCCCCC/C=C\[C@H](O)C#CC#C[C@H](O)C=C" -> "C#CC#CC(=O)O" [label="cost: 1.1616"]
+	"C#CC#CC(=O)O" [label="C#CC#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435802161.png" labelloc=top]
+	"C#CC(=O)O" [label="C#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435802307.png" labelloc=top]
+	"C#CC#CC(=O)O" -> "C#CC(=O)O" [label="cost: 1.4588"]
+	"C#CC(=O)O" [label="C#CC(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435802439.png" labelloc=top]
+	"CC(=O)C(=O)O" [label="CC(=O)C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090435802571.png" labelloc=top]
+	"C#CC(=O)O" -> "CC(=O)C(=O)O" [label="cost: 0.4776"]
+}

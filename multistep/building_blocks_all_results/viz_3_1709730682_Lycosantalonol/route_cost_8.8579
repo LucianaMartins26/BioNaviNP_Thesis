@@ -1,0 +1,12 @@
+digraph G {
+	node [shape=box]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" [label="CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092534.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092602.png" labelloc=top]
+	"CC(C)=CCCC(C)(O)C(=O)CCC1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="cost: 0.9649"]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092661.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092717.png" labelloc=top]
+	"CC(C)=CCC[C@](C)(O)C(=O)/C=C/C1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" [label="cost: 1.6438"]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092772.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C=C(\C)CC/C=C(\C)CCC=C(C)C" [label="CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C=C(\C)CC/C=C(\C)CCC=C(C)C" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17097307092824.png" labelloc=top]
+	"CC(C)=CCC/C(C)=C/CC/C(C)=C/CC1(C)C2CC3C(C2)C31C" -> "CC(C)=CCC/C(C)=C/CC/C(C)=C/CC/C=C(\C)CC/C=C(\C)CCC=C(C)C" [label="cost: 6.2491"]
+}

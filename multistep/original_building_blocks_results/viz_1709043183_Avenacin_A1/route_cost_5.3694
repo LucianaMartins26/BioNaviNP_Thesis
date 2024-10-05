@@ -1,0 +1,15 @@
+digraph G {
+	node [shape=box]
+	"CNC1=CC=CC=C1C(=O)O[C@H]1C[C@@]2(C)[C@@H](C[C@@]1(C)C=O)[C@@]13O[C@@H]1C[C@@H]1[C@@]4(C)CC[C@H](O[C@@H]5OC[C@H](O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@H]6O)[C@H](O)[C@H]5O[C@@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@H]5O)[C@@](C)(CO)[C@@H]4CC[C@@]1(C)[C@]3(C)C[C@@H]2O" [label="CNC1=CC=CC=C1C(=O)O[C@H]1C[C@@]2(C)[C@@H](C[C@@]1(C)C=O)[C@@]13O[C@@H]1C[C@@H]1[C@@]4(C)CC[C@H](O[C@@H]5OC[C@H](O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@H]6O)[C@H](O)[C@H]5O[C@@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@H]5O)[C@@](C)(CO)[C@@H]4CC[C@@]1(C)[C@]3(C)C[C@@H]2O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432080919.png" labelloc=top]
+	"CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" [label="CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081232.png" labelloc=top]
+	"CNC1=CC=CC=C1C(=O)O[C@H]1C[C@@]2(C)[C@@H](C[C@@]1(C)C=O)[C@@]13O[C@@H]1C[C@@H]1[C@@]4(C)CC[C@H](O[C@@H]5OC[C@H](O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@H]6O)[C@H](O)[C@H]5O[C@@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@H]5O)[C@@](C)(CO)[C@@H]4CC[C@@]1(C)[C@]3(C)C[C@@H]2O" -> "CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" [label="cost: 0.1746"]
+	"CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" [label="CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081407.png" labelloc=top]
+	"CNc1ccccc1C(=O)O" [label="CNc1ccccc1C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081579.png" labelloc=top]
+	"CNc1ccccc1C(=O)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O" -> "CNc1ccccc1C(=O)O" [label="cost: 0.0160"]
+	"CNc1ccccc1C(=O)O" [label="CNc1ccccc1C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081726.png" labelloc=top]
+	"Nc1ccccc1C(=O)C(=O)O" [label="Nc1ccccc1C(=O)C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081818.png" labelloc=top]
+	"CNc1ccccc1C(=O)O" -> "Nc1ccccc1C(=O)C(=O)O" [label="cost: 1.3640"]
+	"Nc1ccccc1C(=O)C(=O)O" [label="Nc1ccccc1C(=O)C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432081908.png" labelloc=top]
+	"Nc1ccccc1C(=O)O" [label="Nc1ccccc1C(=O)O" image="/home/lmartins/BioNaviNP_LuciEdition/multistep/images_tmp/17090432082014.png" labelloc=top]
+	"Nc1ccccc1C(=O)C(=O)O" -> "Nc1ccccc1C(=O)O" [label="cost: 3.8147"]
+}

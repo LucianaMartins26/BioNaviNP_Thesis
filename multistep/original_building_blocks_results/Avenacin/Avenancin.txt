@@ -1,0 +1,3 @@
+Praticamente todas as vias chegam ao ácido Anthranilic 
+da via do shikimate, incluindo a route_optimal encontrada, 
+mas não chegam aos percursores da via do mevalonato
